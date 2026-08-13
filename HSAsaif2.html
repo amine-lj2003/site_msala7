@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HSA Study</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CCsaif2.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+
+<body id="top" class="font-story">
+  <div class="page-shell">
+    <div class="background-glow" aria-hidden="true">
+      <div class="glow-orb"></div>
+      <div class="glow-orb"></div>
+      <div class="glow-orb"></div>
+    </div>
+
+    <header class="header">
+      <div class="header-container">
+        <a href="#top" class="brand-link">
+          <div class="brand-mark">
+            <img src="https://api.iconify.design/lucide-stars.svg?color=%236f5ef9" alt="" class="brand-icon" />
+          </div>
+          <div class="brand-text">
+            <span class="font-fairytale brand-name">HSA</span>
+            <span class="brand-tagline">Study like a storybook hero</span>
+          </div>
+        </a>
+        <nav class="glass-card gold-ring dream-shadow navigation">
+          <a href="#header" class="nav-link">Home</a>
+          <a href="#how-it-works" class="nav-link">Help</a>
+          <a href="#testimonials" class="nav-link">Feedback</a>
+
+          <!-- Google Identity Services sign-in button renders here -->
+          <div id="g_id_onload"
+            data-client_id="210620206542-lrlcpkb545sd94e690kt6rfovho43sdj.apps.googleusercontent.com"
+            data-callback="handleGoogleSignIn"
+            data-auto_prompt="false">
+          </div>
+          <div class="g_id_signin"
+            data-type="standard"
+            data-shape="pill"
+            data-theme="filled_blue"
+            data-text="signin_with"
+            data-size="medium"
+            data-logo_alignment="left"
+            data-callback="handleGoogleSignIn"
+            data-client_id="210620206542-lrlcpkb545sd94e690kt6rfovho43sdj.apps.googleusercontent.com">
+          </div>
+
+          <!-- Signed-in state (hidden until the backend confirms a session) -->
+          <div id="user-signed-in" class="header-button" style="display:none;">
+            <img id="user-avatar" src="" alt="" style="width:24px;height:24px;border-radius:50%;vertical-align:middle;margin-right:6px;" />
+            <span id="user-name"></span>
+            <button id="sign-out-button" style="margin-left:8px;background:none;border:none;cursor:pointer;color:inherit;text-decoration:underline;">Sign out</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-grid">
+          <h1 class="font-fairytale hero-heading">Study smarter not harder.</h1>
+          <p class="hero-description">HSA is the whimsical study platform that transforms notes, lectures, and big exams into guided paths, clever summaries, custom quizzes, and calm daily plans. It feels dreamy, but it works like a top student behind the scenes.</p>
+          <div class="hero-content">
+            <div class="hero-actions">
+              <a href="#start" class="primary-button">
+                <img src="https://api.iconify.design/lucide-wand-sparkles.svg?color=white" alt="" class="button-icon" />
+                <span>Begin Your Study Spell</span>
+              </a>
+              <a href="#features" class="glass-card secondary-button">
+                <img src="https://api.iconify.design/lucide-book-open.svg?color=%234b4181" alt="" class="button-icon" />
+                <span>See the Magic</span>
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="glass-card bordered dream-shadow stat-card">
+                <span class="font-fairytale stat-value">92%</span>
+                <span class="stat-label">say studying feels less overwhelming within the first week</span>
+              </div>
+              <div class="glass-card bordered dream-shadow stat-card">
+                <span class="font-fairytale stat-value">4x</span>
+                <span class="stat-label">faster note-to-summary transformation with AI guidance</span>
+              </div>
+              <div class="glass-card bordered dream-shadow stat-card">
+                <span class="font-fairytale stat-value">24/7</span>
+                <span class="stat-label">support from your patient personal study companion</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual-wrap"></div>
+        </div>
+      </section>
+
+      <section id="features" class="value-strip-section">
+        <div class="glass-card dream-shadow bordered value-strip">
+          <div class="value-item">
+            <img src="https://api.iconify.design/lucide-brain.svg?color=%236f5ef9" alt="" class="value-icon" />
+            <div class="value-text">
+              <span class="value-title">Smarter retention</span>
+              <span class="value-description">Built-in active recall and spaced practice.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <img src="https://api.iconify.design/lucide-clock-3.svg?color=%23d9b56d" alt="" class="value-icon" />
+            <div class="value-text">
+              <span class="value-title">Time-saving magic</span>
+              <span class="value-description">Upload notes and get instant study assets.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <img src="https://api.iconify.design/lucide-map.svg?color=%235cbf8b" alt="" class="value-icon" />
+            <div class="value-text">
+              <span class="value-title">Clear study paths</span>
+              <span class="value-description">Daily plans tailored to your energy and deadlines.</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <img src="https://api.iconify.design/lucide-heart-handshake.svg?color=%23dc6f7d" alt="" class="value-icon" />
+            <div class="value-text">
+              <span class="value-title">Calmer motivation</span>
+              <span class="value-description">Supportive prompts that reduce burnout and stress.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="how-it-works-section">
+        <div class="how-container">
+          <div class="section-intro">
+            <span class="section-eyebrow">How It Works</span>
+            <h2 class="font-fairytale section-heading">Three graceful steps from scattered notes to confident studying</h2>
+          </div>
+          <div class="step-grid">
+            <article class="glass-card step-card">
+              <div class="font-fairytale step-number">1</div>
+              <h3 class="font-fairytale step-title">Bring your study world in</h3>
+              <p class="step-description">Upload notes, paste textbook sections, add assignment prompts, or describe your next exam. HSA gathers the pieces of your quest.</p>
+            </article>
+            <article class="glass-card step-card">
+              <div class="font-fairytale step-number">2</div>
+              <h3 class="font-fairytale step-title">Let AI cast the right tools</h3>
+              <p class="step-description">The platform creates summaries, quizzes, explanations, flashcards, and daily plans based on your subject, goals, and timeline.</p>
+            </article>
+            <article class="glass-card step-card">
+              <div class="font-fairytale step-number">3</div>
+              <h3 class="font-fairytale step-title">Study calmly and level up</h3>
+              <p class="step-description">Follow your tailored path, test yourself, ask your tutor questions, and watch your confidence rise with every focused session.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials-section">
+        <div class="section-intro">
+          <span class="section-eyebrow">Student Stories</span>
+          <h2 class="font-fairytale section-heading">Real learners, happier endings</h2>
+          <p class="section-description">These storybook moments are what happen when AI feels warm, useful, and deeply student-centered.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="dream-shadow glass-card bordered testimonial-card">
+            <div class="font-fairytale quote-mark">&ldquo;</div>
+            <p class="testimonial-text">I used to stare at my notes and freeze. HSA turned them into simple summaries and mini quizzes, and somehow studying became soothing instead of scary.</p>
+            <div class="soft-divider"></div>
+            <div class="author-row">
+              <img src="https://app.grapesjs.com/api/assets/random-image?query=student%20portrait%20soft%20light&w=120&h=120" alt="" loading="lazy" class="author-image" />
+              <div class="author-text">
+                <span class="author-name">Lina, Literature Major</span>
+                <span class="author-role">Improved essay prep and weekly consistency</span>
+              </div>
+            </div>
+          </article>
+          <article class="dream-shadow glass-card bordered testimonial-card">
+            <div class="font-fairytale quote-mark">&ldquo;</div>
+            <p class="testimonial-text">The AI tutor explains chemistry without making me feel dumb. I can ask the same thing three times in three different ways, and it always helps me understand.</p>
+            <div class="soft-divider"></div>
+            <div class="author-row">
+              <img src="https://app.grapesjs.com/api/assets/random-image?query=college%20student%20portrait%20lavender&w=120&h=120" alt="" loading="lazy" class="author-image" />
+              <div class="author-text">
+                <span class="author-name">Noah, Pre-Med Student</span>
+                <span class="author-role">Raised quiz scores in two weeks</span>
+              </div>
+            </div>
+          </article>
+          <article class="dream-shadow glass-card bordered testimonial-card">
+            <div class="font-fairytale quote-mark">&ldquo;</div>
+            <p class="testimonial-text">The gentle planner is my favorite part. It broke my exam prep into small daily quests and helped me stop cramming the night before everything.</p>
+            <div class="soft-divider"></div>
+            <div class="author-row">
+              <img src="https://app.grapesjs.com/api/assets/random-image?query=happy%20student%20portrait%20campus&w=120&h=120" alt="" loading="lazy" class="author-image" />
+              <div class="author-text">
+                <span class="author-name">Maya, Business Student</span>
+                <span class="author-role">Felt more organized and less anxious</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section">
+        <div class="pricing-wrapper">
+          <div class="section-intro">
+            <span class="section-eyebrow">Choose Your Chapter</span>
+            <h2 class="font-fairytale section-heading">Plans for curious learners, ambitious dreamers, and full-on academic royalty</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="glass-card pricing-card">
+              <div class="pricing-header">
+                <span class="plan-label">Free Tale</span>
+                <h3 class="font-fairytale plan-title">Starter</h3>
+                <p class="plan-description">Perfect for testing the waters and building a calm study rhythm.</p>
+              </div>
+              <div class="plan-price-row">
+                <span class="font-fairytale plan-price">$0</span>
+                <span class="plan-frequency">/month</span>
+              </div>
+              <div class="plan-features">
+                <div class="plan-feature">5 AI summaries per week</div>
+                <div class="plan-feature">Basic quiz generation</div>
+                <div class="plan-feature">1 subject workspace</div>
+                <div class="plan-feature">Gentle planning basics</div>
+              </div>
+              <a href="#start" class="plan-button">Enter the Forest</a>
+            </article>
+
+            <article class="pricing-card-featured">
+              <div class="featured-card-inner">
+                <div class="featured-badge-wrap">
+                  <span class="featured-badge">Most Loved</span>
+                  <span class="featured-note">Best for serious studying</span>
+                </div>
+                <div class="pricing-header">
+                  <h3 class="font-fairytale plan-title">Moonlight Scholar</h3>
+                  <p class="plan-description">For students who want everyday AI support, deeper revision tools, and a study flow that actually lasts.</p>
+                </div>
+                <div class="plan-price-row">
+                  <span class="font-fairytale plan-price">$19</span>
+                  <span class="plan-frequency">/month</span>
+                </div>
+                <div class="plan-features">
+                  <div class="plan-feature">Unlimited summaries and AI chats</div>
+                  <div class="plan-feature">Adaptive quizzes and flashcards</div>
+                  <div class="plan-feature">Smart planner with exam countdowns</div>
+                  <div class="plan-feature">Multiple subjects and progress insights</div>
+                </div>
+                <a href="#start" class="plan-button">
+                  <img src="https://api.iconify.design/lucide-crown.svg?color=white" alt="" class="button-icon" />
+                  <span>Claim the Crown</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="glass-card pricing-card">
+              <div class="pricing-header">
+                <span class="plan-label">Royal Academy</span>
+                <h3 class="font-fairytale plan-title">Teams</h3>
+                <p class="plan-description">For schools, tutors, and study programs bringing enchanted learning to many students at once.</p>
+              </div>
+              <div class="plan-price-row">
+                <span class="font-fairytale plan-price">$79</span>
+                <span class="plan-frequency">/month</span>
+              </div>
+              <div class="plan-features">
+                <div class="plan-feature">Shared workspaces for groups</div>
+                <div class="plan-feature">Tutor dashboards and oversight</div>
+                <div class="plan-feature">Admin controls and usage analytics</div>
+                <div class="plan-feature">Priority support and onboarding</div>
+              </div>
+              <a href="#contact" class="plan-button">Speak with the Court</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="start" class="final-cta-section">
+        <div class="cta-card">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-content">
+            <div class="cta-copy">
+              <span class="cta-eyebrow">Your next chapter starts now</span>
+              <h2 class="font-fairytale cta-heading">Let AI help you study with more wonder, less worry.</h2>
+              <p class="cta-description">Join students building calm, consistent, genuinely effective study habits with an enchanted AI companion designed to guide, explain, quiz, and encourage.</p>
+            </div>
+            <div class="glass-card cta-panel">
+              <div class="cta-panel-header">
+                <img src="https://api.iconify.design/lucide-sparkle.svg?color=%23f7eec8" alt="" class="cta-icon" />
+                <span class="cta-panel-title">Start your free study spell</span>
+              </div>
+              <div class="cta-benefit-list">
+                <div class="cta-benefit">Set up your first subject in minutes</div>
+                <div class="cta-benefit">Create a plan for your next exam tonight</div>
+              </div>
+              <div class="cta-actions">
+                <!-- TODO: point this at the real signup/app URL -->
+                <a href="#top" class="cta-primary-button">
+                  <img src="https://api.iconify.design/lucide-rocket.svg?color=%234f42bc" alt="" class="cta-button-icon" />
+                  <span>Open HSA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container" id="i18s44">
+          <div class="soft-divider" id="i16cya"></div>
+          <div class="footer-grid" id="ixe1cp">
+            <div class="footer-column" id="ivqux4"></div>
+          </div>
+          <div data-type-role="flex-row" class="gjs-plg-flex-row" id="iczt4i">
+            <div data-type-role="flex-column" class="gjs-plg-flex-column" id="iez4de">
+              <span class="footer-note" id="ip0ttl">
+                <span data-gs-mrk-fs="true" id="icbhyy">Dreamed up for better studying everywhere.</span>
+              </span>
+            </div>
+          </div>
+          <div class="footer-bottom" id="ip76wa">
+            <span id="i6t3do">© 2026 HSA. All rights reserved.</span>
+            <div class="footer-socials" id="ijmb0n">
+              <a href="#contact" aria-label="Email" class="social-link" id="igh13h">
+                <img src="https://api.iconify.design/lucide-mail.svg?color=%2351486f" alt="" class="social-icon" id="iu839r" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    // ---- Google Sign-In (OAuth) wired to the backend ----
+    // 1. Replace data-client_id above with your real Google Client ID.
+    // 2. Set BACKEND_URL below to where your backend (server.js) runs.
+    // 3. In Google Cloud Console, add this page's origin to
+    //    "Authorized JavaScript origins" for that OAuth client.
+
+    const BACKEND_URL = "http://localhost:4000"; // change to your deployed backend URL in production
+
+    // The frontend never trusts the token itself — it hands the raw
+    // credential to the backend, which verifies it with Google and
+    // creates a real session cookie.
+    async function handleGoogleSignIn(response) {
+      try {
+        const res = await fetch(`${BACKEND_URL}/auth/google`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include", // required so the session cookie is stored
+          body: JSON.stringify({ credential: response.credential }),
+        });
+
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.error || "Sign-in failed");
+        }
+
+        const { user } = await res.json();
+        showSignedInUI(user);
+      } catch (err) {
+        console.error("Google sign-in error:", err);
+        alert("Sign-in failed. Please try again.");
+      }
+    }
+
+    function showSignedInUI(user) {
+      document.getElementById("user-avatar").src = user.picture || "";
+      document.getElementById("user-name").textContent = user.name || user.email || "Signed in";
+      document.getElementById("user-signed-in").style.display = "inline-flex";
+
+      const signinDiv = document.querySelector(".g_id_signin");
+      if (signinDiv) signinDiv.style.display = "none";
+    }
+
+    function showSignedOutUI() {
+      document.getElementById("user-signed-in").style.display = "none";
+      const signinDiv = document.querySelector(".g_id_signin");
+      if (signinDiv) signinDiv.style.display = "inline-block";
+    }
+
+    async function signOut() {
+      try {
+        await fetch(`${BACKEND_URL}/auth/logout`, {
+          method: "POST",
+          credentials: "include",
+        });
+      } catch (err) {
+        console.error("Logout request failed:", err);
+      }
+      if (window.google && google.accounts && google.accounts.id) {
+        google.accounts.id.disableAutoSelect();
+      }
+      showSignedOutUI();
+    }
+
+    // On page load, ask the backend if we already have a valid session
+    // (e.g. the user signed in earlier and the cookie is still valid).
+    async function checkExistingSession() {
+      try {
+        const res = await fetch(`${BACKEND_URL}/auth/me`, {
+          credentials: "include",
+        });
+        if (res.ok) {
+          const { user } = await res.json();
+          showSignedInUI(user);
+        }
+      } catch (err) {
+        // Backend not reachable yet — that's fine, just show the sign-in button
+        console.warn("Could not reach backend to check session:", err.message);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("sign-out-button").addEventListener("click", signOut);
+      checkExistingSession();
+    });
+  </script>
+</body>
+</html>
